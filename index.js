@@ -117,7 +117,18 @@ for ( var index = 1; index < finances.length ; index++) {
 
     //Calculates average change total using each current average change
     average_change_total += current_change_amount;
-    
+
+    // Calculates greatest increase in profits and greatest decrease in losses (date and amount) 
+    if( ( current_change_amount ) > greatest_increase_amount ){
+
+        greatest_increase_amount = current_change_amount;
+        greatest_increase_date = current_change_date;
+    }
+    else if ( current_change_amount  < greatest_decrease_amount ) {
+
+        greatest_decrease_amount = current_change_amount;
+        greatest_decrease_date= current_change_date;
+     }
 
 }
 
