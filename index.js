@@ -151,3 +151,5 @@ console.log('Average Change: ' + (average_change_total/finances.length).toFixed(
 console.log ('Greates increase: '+ greatest_increase_amount + ' : ' + greatest_increase_date )
 
 //The greatest decrease in losses (date and amount) over the entire period.
+
+console.log ('Greates decrease: '+ greatest_decrease_amount + ' : ' + greatest_decrease_date )
