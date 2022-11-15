@@ -99,12 +99,6 @@ var greatest_increase_amount=0;
 var greatest_decrease_date ='';
 var greatest_decrease_amount=0;
 
-//Title and divider
-console.log('Financial Analysis\n----------------------------');
-
-//The total number of months included in the dataset.
-
-console.log('Total Months: ' + finances.length);
 
 
 
@@ -134,14 +128,20 @@ for ( var index = 1; index < finances.length ; index++) {
 
 }
 
+
+
+
+//Title and divider
+console.log('Financial Analysis\n----------------------------');
+
+//The total number of months included in the dataset.
+console.log('Total Months: ' + finances.length);
+
+//The net total amount of Profit/Losses over the entire period.
 console.log('Total: ' + total_profit_losses);
 
 
-
 //The average of the changes in Profit/Losses over the entire period.
-
-
-//The total change in profits from month to month and the average.
 
 
 //The greatest increase in profits (date and amount) over the entire period.
