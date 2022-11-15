@@ -40,7 +40,7 @@ Your final code should print the analysis to the console.
 
 ## Screenshots 
 
-![screenshoot of final result](/images/screenshot.png)
+![screenshoot of final result](images/screenshot.png)
 
 
 
