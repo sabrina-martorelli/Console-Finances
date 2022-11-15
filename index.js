@@ -87,7 +87,10 @@ var finances = [
     ['Feb-2017', 671099]
 ];
 
-var total_profit_losses = 0;
+
+//Initialize variable with first amount on array to improve for
+var total_profit_losses = finances[0][1];
+
 var average_change_total =0;
 var current_change_amount = 0;
 var current_change_date=''
@@ -102,7 +105,6 @@ console.log('Financial Analysis\n----------------------------');
 //The total number of months included in the dataset.
 
 console.log('Total Months: ' + finances.length);
-
 
 
 
