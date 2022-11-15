@@ -143,6 +143,8 @@ console.log('Total: ' + total_profit_losses);
 
 //The average of the changes in Profit/Losses over the entire period.
 
+console.log('Average Change:' + (average_change_total/finances.length).toFixed(2));
+
 
 //The greatest increase in profits (date and amount) over the entire period.
 
