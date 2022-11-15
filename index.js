@@ -91,6 +91,7 @@ var finances = [
 //Initialize variable with first amount on array to improve for
 var total_profit_losses = finances[0][1];
 
+
 var average_change_total =0;
 var current_change_amount = 0;
 var current_change_date=''
@@ -148,8 +149,8 @@ console.log('Average Change: ' + (average_change_total/finances.length).toFixed(
 
 //The greatest increase in profits (date and amount) over the entire period.
 
-console.log ('Greates increase: '+ greatest_increase_amount + ' : ' + greatest_increase_date )
+console.log ('Greates Increase: '+ greatest_increase_amount + ' : ' + greatest_increase_date )
 
 //The greatest decrease in losses (date and amount) over the entire period.
 
-console.log ('Greates decrease: '+ greatest_decrease_amount + ' : ' + greatest_decrease_date )
+console.log ('Greates Decrease: '+ greatest_decrease_amount + ' : ' + greatest_decrease_date )
