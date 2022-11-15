@@ -87,8 +87,7 @@ var finances = [
     ['Feb-2017', 671099] 
 ];
 
-
-//Variable uses to calculate total number of months included in the dataset
+//Variable use to calculate total number of months included in the dataset
 //Initialize variable with first amount on array to improve for
 var total_profit_losses = finances[0][1];
 
@@ -101,14 +100,11 @@ var current_change_date = ''
 var greatest_increase_date = '';
 var greatest_increase_amount = 0;
 
-
 //Variables used to calculate calculates greatest decrease in losses (date and amount)
 var greatest_decrease_date = '';
 var greatest_decrease_amount = 0;
 
-
 // Use of only 1 for to improve efficiency and do less operations
-
 for (var index = 1; index < finances.length; index++) {
 
     //Calculation of the total amount of Profit/Losses over the entire period
@@ -139,7 +135,7 @@ for (var index = 1; index < finances.length; index++) {
 }
 
 
-// Prints on console log
+//Prints on console log
 
 //Title and divider
 console.log('Financial Analysis\n----------------');
@@ -151,13 +147,10 @@ console.log('Total Months: ' + finances.length);
 console.log('Total: $' + total_profit_losses);
 
 //The average of the changes in Profit/Losses over the entire period.
-
 console.log('Average Change: $' + (average_change_total / finances.length).toFixed(2));
 
 //The greatest increase in profits (date and amount) over the entire period.
-
 console.log('Greates Increase: ' + greatest_increase_date + ': $' + greatest_increase_amount )
 
 //The greatest decrease in losses (date and amount) over the entire period.
-
 console.log('Greates Decrease: ' + greatest_decrease_date + ': $' + greatest_decrease_amount)
