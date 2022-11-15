@@ -115,8 +115,9 @@ for (var index = 1; index < finances.length; index++) {
     total_profit_losses += finances[index][1];
 
     //Store current change amount and current date to simplify code reading.
-    //In this solution, the current amount was calculated doing a substraction between current and previous months in each round
-    //In this solucion the current date will be the date of the current month we are analizing in each round
+    // For this solution : 
+    //  -The current amount was calculated doing a substraction between current and previous months in each round
+    //  -The current date will be the date of the current month we are analizing in each round
     current_change_amount = finances[index][1] - finances[index - 1][1];
     current_change_date = finances[index][0];
 
