@@ -111,6 +111,9 @@ for ( var index = 1; index < finances.length ; index++) {
     //Calculation of the total amount of Profit/Losses over the entire period.
     total_profit_losses += finances[index][1];
 
+    // Store current change amount and current date to simplify code
+    current_change_amount = finances[index][1] - finances[index-1][1];
+    current_change_date = finances[index][0] - finances[index-1][0];
 
 }
 
