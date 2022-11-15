@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a javascript example that analyze the financial records of a company. The financial dataset was provided and is at the begining of the 'index.js' file.
+This is a javascript code that analyze the financial records of a company. The financial dataset was provided and is in the 'data.js' file.
 
  The code present here analyzes the records to calculate each of the following:
 
@@ -10,12 +10,11 @@ This is a javascript example that analyze the financial records of a company. Th
 
 * The net total amount of Profit/Losses over the entire period.
 
-* The average of the **changes** in Profit/Losses over the entire period.
+* The average of the **changes** in Profit/Losses over the entire period.  
 
 * The greatest increase in profits (date and amount) over the entire period.
 
 * The greatest decrease in losses (date and amount) over the entire period.
-
 
 
 ## Installation
@@ -29,11 +28,11 @@ When you open your code in the browser your resulting analysis should look simil
   ```text
   Financial Analysis
   ----------------------------
-  Total Months: 25
-  Total: $2561231
-  Average  Change: $-2315.12
-  Greatest Increase in Profits: Feb-2012 ($1926159)
-  Greatest Decrease in Profits: Sep-2013 ($-2196167)
+  Total Months: 86
+  Total:  $38382578
+  Average  Change: $-2288.20
+  Greatest Increase in Profits: Feb-2012: $1926159
+  Greatest Decrease in Profits: Sep-2013: $-2196167
   ```
 
 Your final code should print the analysis to the console.
