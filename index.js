@@ -87,6 +87,14 @@ var finances = [
     ['Feb-2017', 671099]
 ];
 
+var total_profit_losses = 0;
+var average_change =0;
+var current_change_amount = 0;
+var current_change_date=''
+var greatest_increase_date ='';
+var greatest_increase_amount=0;
+var greatest_decrease_date ='';
+var greatest_decrease_amount=0;
 
 //Title and divider
 console.log('Financial Analysis\n----------------------------');
@@ -97,7 +105,7 @@ console.log('Total Months: ' + finances.length);
 
 //The net total amount of Profit/Losses over the entire period.
 
-var total_profit_losses = 0;
+
 
 for (var index = finances.length; index--;) {
     total_profit_losses += finances[index][1];
