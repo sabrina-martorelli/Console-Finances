@@ -88,7 +88,7 @@ var finances = [
 ];
 
 var total_profit_losses = 0;
-var average_change =0;
+var average_change_total =0;
 var current_change_amount = 0;
 var current_change_date=''
 var greatest_increase_date ='';
@@ -114,6 +114,10 @@ for ( var index = 1; index < finances.length ; index++) {
     // Store current change amount and current date to simplify code
     current_change_amount = finances[index][1] - finances[index-1][1];
     current_change_date = finances[index][0] - finances[index-1][0];
+
+    //Calculates average change total using each current average change
+    average_change_total += current_change_amount;
+    
 
 }
 
