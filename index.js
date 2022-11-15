@@ -103,11 +103,15 @@ console.log('Financial Analysis\n----------------------------');
 
 console.log('Total Months: ' + finances.length);
 
-//The net total amount of Profit/Losses over the entire period.
+
 
 
 for ( var index = 1; index < finances.length ; index++) {
+    
+    //Calculation of the total amount of Profit/Losses over the entire period.
     total_profit_losses += finances[index][1];
+
+
 }
 
 console.log('Total: ' + total_profit_losses);
