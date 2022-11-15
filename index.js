@@ -114,11 +114,13 @@ for (var index = 1; index < finances.length; index++) {
     //Calculation of the total amount of Profit/Losses over the entire period
     total_profit_losses += finances[index][1];
 
-    //Store current change amount and current date to simplify code
+    //Store current change amount and current date to simplify code reading.
+    //In this solution, the current amount was calculated doing a substraction between current and previous months in each round
+    //In this solucion the current date will be the date of the current month we are analizing in each round
     current_change_amount = finances[index][1] - finances[index - 1][1];
     current_change_date = finances[index][0];
 
-    //Calculates average change total using each current average change
+    //Calculates average change total using each current average change 
     average_change_total += current_change_amount;
 
     // Calculates greatest increase in profits and greatest decrease in losses (date and amount) based on current amount change
