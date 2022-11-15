@@ -1,5 +1,5 @@
 var finances = [
-    ['Jan-2010', 999999999999999], //867884
+    ['Jan-2010', 867884],
     ['Feb-2010', 984655],
     ['Mar-2010', 322013],
     ['Apr-2010', -69417],
@@ -84,7 +84,7 @@ var finances = [
     ['Nov-2016', 795914],
     ['Dec-2016', 60988],
     ['Jan-2017', 138230],
-    ['Feb-2017', 99999999] //671099
+    ['Feb-2017', 671099] 
 ];
 
 
@@ -139,13 +139,13 @@ for (var index = 1; index < finances.length; index++) {
 // Prints on console log
 
 //Title and divider
-console.log('Financial Analysis\n----------------------------');
+console.log('Financial Analysis\n----------------');
 
 //The total number of months included in the dataset.
 console.log('Total Months: ' + finances.length);
 
 //The net total amount of Profit/Losses over the entire period.
-console.log('Total: ' + total_profit_losses);
+console.log('Total: $' + total_profit_losses);
 
 //The average of the changes in Profit/Losses over the entire period.
 
@@ -153,8 +153,8 @@ console.log('Average Change: ' + (average_change_total / finances.length).toFixe
 
 //The greatest increase in profits (date and amount) over the entire period.
 
-console.log('Greates Increase: ' + greatest_increase_amount + ' : ' + greatest_increase_date)
+console.log('Greates Increase: ' + greatest_increase_date + ': $' + greatest_increase_amount )
 
 //The greatest decrease in losses (date and amount) over the entire period.
 
-console.log('Greates Decrease: ' + greatest_decrease_amount + ' : ' + greatest_decrease_date)
+console.log('Greates Decrease: ' + greatest_decrease_date + ': $' + greatest_decrease_amount)
