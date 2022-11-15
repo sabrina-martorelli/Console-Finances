@@ -1,5 +1,5 @@
 var finances = [
-    ['Jan-2010', 867884],
+    ['Jan-2010', 999999999999999], //867884
     ['Feb-2010', 984655],
     ['Mar-2010', 322013],
     ['Apr-2010', -69417],
@@ -84,7 +84,7 @@ var finances = [
     ['Nov-2016', 795914],
     ['Dec-2016', 60988],
     ['Jan-2017', 138230],
-    ['Feb-2017', 671099]
+    ['Feb-2017', 99999999] //671099
 ];
 
 
@@ -93,46 +93,45 @@ var finances = [
 var total_profit_losses = finances[0][1];
 
 //Variables used to calculate average change total 
-var average_change_total =0;
+var average_change_total = 0;
 var current_change_amount = 0;
-var current_change_date=''
+var current_change_date = ''
 
 //Variables used to calculate calculates greatest increase in profits(date and amount)
-var greatest_increase_date ='';
-var greatest_increase_amount=0;
+var greatest_increase_date = '';
+var greatest_increase_amount = 0;
 
 
 //Variables used to calculate calculates greatest decrease in losses (date and amount)
-var greatest_decrease_date ='';
-var greatest_decrease_amount=0;
-
+var greatest_decrease_date = '';
+var greatest_decrease_amount = 0;
 
 
 // Use of only 1 for to improve efficiency and do less operations
 
-for ( var index = 1; index < finances.length ; index++) {
-    
+for (var index = 1; index < finances.length; index++) {
+
     //Calculation of the total amount of Profit/Losses over the entire period
     total_profit_losses += finances[index][1];
 
     //Store current change amount and current date to simplify code
-    current_change_amount = finances[index][1] - finances[index-1][1];
+    current_change_amount = finances[index][1] - finances[index - 1][1];
     current_change_date = finances[index][0];
 
     //Calculates average change total using each current average change
     average_change_total += current_change_amount;
 
     // Calculates greatest increase in profits and greatest decrease in losses (date and amount) based on current amount change
-    if( ( current_change_amount ) > greatest_increase_amount ){
+    if ((current_change_amount) > greatest_increase_amount) {
 
         greatest_increase_amount = current_change_amount;
         greatest_increase_date = current_change_date;
     }
-    else if ( current_change_amount  < greatest_decrease_amount ) {
+    else if (current_change_amount < greatest_decrease_amount) {
 
         greatest_decrease_amount = current_change_amount;
-        greatest_decrease_date= current_change_date;
-     }
+        greatest_decrease_date = current_change_date;
+    }
 
 }
 
@@ -150,12 +149,12 @@ console.log('Total: ' + total_profit_losses);
 
 //The average of the changes in Profit/Losses over the entire period.
 
-console.log('Average Change: ' + (average_change_total/finances.length).toFixed(2));
+console.log('Average Change: ' + (average_change_total / finances.length).toFixed(2));
 
 //The greatest increase in profits (date and amount) over the entire period.
 
-console.log ('Greates Increase: '+ greatest_increase_amount + ' : ' + greatest_increase_date )
+console.log('Greates Increase: ' + greatest_increase_amount + ' : ' + greatest_increase_date)
 
 //The greatest decrease in losses (date and amount) over the entire period.
 
-console.log ('Greates Decrease: '+ greatest_decrease_amount + ' : ' + greatest_decrease_date )
+console.log('Greates Decrease: ' + greatest_decrease_amount + ' : ' + greatest_decrease_date)
