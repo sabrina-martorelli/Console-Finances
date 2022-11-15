@@ -109,7 +109,7 @@ for ( var index = 1; index < finances.length ; index++) {
 
     // Store current change amount and current date to simplify code
     current_change_amount = finances[index][1] - finances[index-1][1];
-    current_change_date = finances[index][0] - finances[index-1][0];
+    current_change_date = finances[index][0];
 
     //Calculates average change total using each current average change
     average_change_total += current_change_amount;
@@ -143,10 +143,11 @@ console.log('Total: ' + total_profit_losses);
 
 //The average of the changes in Profit/Losses over the entire period.
 
-console.log('Average Change:' + (average_change_total/finances.length).toFixed(2));
+console.log('Average Change: ' + (average_change_total/finances.length).toFixed(2));
 
 
 //The greatest increase in profits (date and amount) over the entire period.
 
+console.log ('Greates increase: '+ greatest_increase_amount + ' : ' + greatest_increase_date )
 
 //The greatest decrease in losses (date and amount) over the entire period.
